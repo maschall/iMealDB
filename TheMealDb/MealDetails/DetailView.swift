@@ -8,10 +8,24 @@
 import SwiftUI
 
 struct DetailView: View {
-    @StateObject var indexViewModel: IndexViewModel
+    @StateObject var detailViewModel: DetailViewModel
+    
+    init(indexViewModel: IndexViewModel) {
+        _detailViewModel = StateObject(wrappedValue: DetailViewModel(indexViewModel: indexViewModel))
+    }
     
     var body: some View {
-        Text("Test")
+        VStack(alignment: .leading, spacing: 10) {
+            Text(detailViewModel.name).bold()
+            AsyncImage(url: detailViewModel.thumbnailURL) { image in image.image?.resizable() }
+                .frame(width: 250, height: 250)
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+            
+            Text("Instructions").bold()
+            Text(detailViewModel.instructions)
+        }
+        .padding()
+        
     }
     
 }

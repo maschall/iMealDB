@@ -36,5 +36,28 @@ struct MealDbAPI {
             .eraseToAnyPublisher()
     }
     
+    public static func fetchMeal(id: String) -> AnyPublisher<MealDetail, Never> {
+        let mealEndpoint = MeadDbEndpoint(path: "/api/json/v1/1/lookup.php", queryItems: [URLQueryItem(name: "i", value: id)])
+        
+        return URLSession.shared.dataTaskPublisher(for: mealEndpoint.url!)
+            .map(\.data)
+            .decode(type: MealDetailWrapper.self, decoder: JSONDecoder())
+            .map { $0.meals.first ?? MealDetail(instructions: "") }
+            .replaceError(with: MealDetail(instructions: ""))
+            .receive(on: DispatchQueue.main)
+            .eraseToAnyPublisher()
+    }
+    
+}
+
+
+public extension String {
+    func decodeJSON<T>(_ type: T.Type) -> T? where T : Decodable {
+        if let data = self.data(using: .utf8) {
+            return try? JSONDecoder().decode(type, from: data)
+        }
+        
+        return nil
+    }
 }
 

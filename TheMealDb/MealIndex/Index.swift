@@ -23,12 +23,3 @@ public struct MealIndex: Codable {
     }
 }
 
-public extension String {
-    func decodeJSON<T>(_ type: T.Type) -> T? where T : Decodable {
-        if let data = self.data(using: .utf8) {
-            return try? JSONDecoder().decode(type, from: data)
-        }
-        
-        return nil
-    }
-}

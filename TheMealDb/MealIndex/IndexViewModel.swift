@@ -11,7 +11,6 @@ import Combine
 class IndexListViewModel: ObservableObject {
     @Published var category: String
     
-    @Published var loading = true
     @Published var meals: [IndexViewModel] = []
     
     init(category: String) {
