@@ -16,9 +16,17 @@ struct IndexView: View {
     
     var body: some View {
         VStack{
-            Text(viewModel.category)
-            List($viewModel.meals, id: \.id) { $indexViewModel in
-                IndexCard(viewModel: indexViewModel)
+            NavigationSplitView {
+                List($viewModel.meals, id: \.id) { $indexViewModel in
+                    NavigationLink {
+                        DetailView(indexViewModel: indexViewModel)
+                    } label: {
+                        IndexCard(viewModel: indexViewModel)
+                    }
+                }
+                .navigationTitle(viewModel.category)
+            } detail: {
+                Text("Select a meal")
             }
         }
     }
