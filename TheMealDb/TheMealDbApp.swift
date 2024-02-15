@@ -11,7 +11,7 @@ import SwiftUI
 struct TheMealDbApp: App {
     var body: some Scene {
         WindowGroup {
-            IndexView()
+            IndexView(category: "Dessert")
         }
     }
 }

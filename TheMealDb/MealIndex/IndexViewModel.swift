@@ -8,6 +8,24 @@
 import Foundation
 import Combine
 
+class IndexListViewModel: ObservableObject {
+    @Published var category: String
+    
+    @Published var loading = true
+    @Published var meals: [IndexViewModel] = []
+    
+    init(category: String) {
+        self.category = category
+        
+        let fetchCategory = MealDbAPI.fetchCategory(category: category)
+        
+        fetchCategory
+            .map { $0.meals.map { IndexViewModel($0) } }
+            .assign(to: &$meals)
+    }
+    
+}
+
 class IndexViewModel: ObservableObject {
     
     @Published var name: String
