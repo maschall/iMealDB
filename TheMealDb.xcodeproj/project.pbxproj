@@ -8,23 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		4DEFA1452B7D2C0200767E68 /* TheMealDbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEFA1442B7D2C0200767E68 /* TheMealDbApp.swift */; };
-		4DEFA1472B7D2C0200767E68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEFA1462B7D2C0200767E68 /* ContentView.swift */; };
+		4DEFA1472B7D2C0200767E68 /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEFA1462B7D2C0200767E68 /* IndexView.swift */; };
 		4DEFA1492B7D2C0300767E68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DEFA1482B7D2C0300767E68 /* Assets.xcassets */; };
 		4DEFA14C2B7D2C0300767E68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DEFA14B2B7D2C0300767E68 /* Preview Assets.xcassets */; };
-		4DEFA1562B7D2C0300767E68 /* TheMealDbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEFA1552B7D2C0300767E68 /* TheMealDbTests.swift */; };
-		4DEFA1602B7D2C0300767E68 /* TheMealDbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEFA15F2B7D2C0300767E68 /* TheMealDbUITests.swift */; };
-		4DEFA1622B7D2C0300767E68 /* TheMealDbUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEFA1612B7D2C0300767E68 /* TheMealDbUITestsLaunchTests.swift */; };
+		4DEFA1732B7D2E6800767E68 /* MealIndexModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEFA1722B7D2E6800767E68 /* MealIndexModelTests.swift */; };
+		4DEFA1752B7D9B5000767E68 /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEFA1742B7D9B5000767E68 /* Index.swift */; };
+		4DEFA1772B7D9C2400767E68 /* IndexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEFA1762B7D9C2400767E68 /* IndexViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		4DEFA1522B7D2C0300767E68 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4DEFA1392B7D2C0200767E68 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4DEFA1402B7D2C0200767E68;
-			remoteInfo = TheMealDb;
-		};
-		4DEFA15C2B7D2C0300767E68 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4DEFA1392B7D2C0200767E68 /* Project object */;
 			proxyType = 1;
@@ -36,14 +29,13 @@
 /* Begin PBXFileReference section */
 		4DEFA1412B7D2C0200767E68 /* TheMealDb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMealDb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DEFA1442B7D2C0200767E68 /* TheMealDbApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMealDbApp.swift; sourceTree = "<group>"; };
-		4DEFA1462B7D2C0200767E68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4DEFA1462B7D2C0200767E68 /* IndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexView.swift; sourceTree = "<group>"; };
 		4DEFA1482B7D2C0300767E68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DEFA14B2B7D2C0300767E68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4DEFA1512B7D2C0300767E68 /* TheMealDbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMealDbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DEFA1552B7D2C0300767E68 /* TheMealDbTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMealDbTests.swift; sourceTree = "<group>"; };
-		4DEFA15B2B7D2C0300767E68 /* TheMealDbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMealDbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DEFA15F2B7D2C0300767E68 /* TheMealDbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMealDbUITests.swift; sourceTree = "<group>"; };
-		4DEFA1612B7D2C0300767E68 /* TheMealDbUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMealDbUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4DEFA1722B7D2E6800767E68 /* MealIndexModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealIndexModelTests.swift; sourceTree = "<group>"; };
+		4DEFA1742B7D9B5000767E68 /* Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
+		4DEFA1762B7D9C2400767E68 /* IndexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +53,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DEFA1582B7D2C0300767E68 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,7 +61,6 @@
 			children = (
 				4DEFA1432B7D2C0200767E68 /* TheMealDb */,
 				4DEFA1542B7D2C0300767E68 /* TheMealDbTests */,
-				4DEFA15E2B7D2C0300767E68 /* TheMealDbUITests */,
 				4DEFA1422B7D2C0200767E68 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +70,6 @@
 			children = (
 				4DEFA1412B7D2C0200767E68 /* TheMealDb.app */,
 				4DEFA1512B7D2C0300767E68 /* TheMealDbTests.xctest */,
-				4DEFA15B2B7D2C0300767E68 /* TheMealDbUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,8 +77,10 @@
 		4DEFA1432B7D2C0200767E68 /* TheMealDb */ = {
 			isa = PBXGroup;
 			children = (
+				4DEFA1702B7D2C2A00767E68 /* MealIndex */,
+				4DEFA16F2B7D2C1D00767E68 /* MealDetails */,
+				4DEFA16E2B7D2C1100767E68 /* Shared */,
 				4DEFA1442B7D2C0200767E68 /* TheMealDbApp.swift */,
-				4DEFA1462B7D2C0200767E68 /* ContentView.swift */,
 				4DEFA1482B7D2C0300767E68 /* Assets.xcassets */,
 				4DEFA14A2B7D2C0300767E68 /* Preview Content */,
 			);
@@ -113,18 +98,41 @@
 		4DEFA1542B7D2C0300767E68 /* TheMealDbTests */ = {
 			isa = PBXGroup;
 			children = (
-				4DEFA1552B7D2C0300767E68 /* TheMealDbTests.swift */,
+				4DEFA1712B7D2E3800767E68 /* MealIndex */,
 			);
 			path = TheMealDbTests;
 			sourceTree = "<group>";
 		};
-		4DEFA15E2B7D2C0300767E68 /* TheMealDbUITests */ = {
+		4DEFA16E2B7D2C1100767E68 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				4DEFA15F2B7D2C0300767E68 /* TheMealDbUITests.swift */,
-				4DEFA1612B7D2C0300767E68 /* TheMealDbUITestsLaunchTests.swift */,
 			);
-			path = TheMealDbUITests;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4DEFA16F2B7D2C1D00767E68 /* MealDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MealDetails;
+			sourceTree = "<group>";
+		};
+		4DEFA1702B7D2C2A00767E68 /* MealIndex */ = {
+			isa = PBXGroup;
+			children = (
+				4DEFA1462B7D2C0200767E68 /* IndexView.swift */,
+				4DEFA1742B7D9B5000767E68 /* Index.swift */,
+				4DEFA1762B7D9C2400767E68 /* IndexViewModel.swift */,
+			);
+			path = MealIndex;
+			sourceTree = "<group>";
+		};
+		4DEFA1712B7D2E3800767E68 /* MealIndex */ = {
+			isa = PBXGroup;
+			children = (
+				4DEFA1722B7D2E6800767E68 /* MealIndexModelTests.swift */,
+			);
+			path = MealIndex;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +173,6 @@
 			productReference = 4DEFA1512B7D2C0300767E68 /* TheMealDbTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4DEFA15A2B7D2C0300767E68 /* TheMealDbUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4DEFA16B2B7D2C0300767E68 /* Build configuration list for PBXNativeTarget "TheMealDbUITests" */;
-			buildPhases = (
-				4DEFA1572B7D2C0300767E68 /* Sources */,
-				4DEFA1582B7D2C0300767E68 /* Frameworks */,
-				4DEFA1592B7D2C0300767E68 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4DEFA15D2B7D2C0300767E68 /* PBXTargetDependency */,
-			);
-			name = TheMealDbUITests;
-			productName = TheMealDbUITests;
-			productReference = 4DEFA15B2B7D2C0300767E68 /* TheMealDbUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +187,6 @@
 						CreatedOnToolsVersion = 15.1;
 					};
 					4DEFA1502B7D2C0300767E68 = {
-						CreatedOnToolsVersion = 15.1;
-						TestTargetID = 4DEFA1402B7D2C0200767E68;
-					};
-					4DEFA15A2B7D2C0300767E68 = {
 						CreatedOnToolsVersion = 15.1;
 						TestTargetID = 4DEFA1402B7D2C0200767E68;
 					};
@@ -221,7 +207,6 @@
 			targets = (
 				4DEFA1402B7D2C0200767E68 /* TheMealDb */,
 				4DEFA1502B7D2C0300767E68 /* TheMealDbTests */,
-				4DEFA15A2B7D2C0300767E68 /* TheMealDbUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,13 +228,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DEFA1592B7D2C0300767E68 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,8 +235,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DEFA1472B7D2C0200767E68 /* ContentView.swift in Sources */,
+				4DEFA1472B7D2C0200767E68 /* IndexView.swift in Sources */,
 				4DEFA1452B7D2C0200767E68 /* TheMealDbApp.swift in Sources */,
+				4DEFA1752B7D9B5000767E68 /* Index.swift in Sources */,
+				4DEFA1772B7D9C2400767E68 /* IndexViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,16 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DEFA1562B7D2C0300767E68 /* TheMealDbTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4DEFA1572B7D2C0300767E68 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4DEFA1602B7D2C0300767E68 /* TheMealDbUITests.swift in Sources */,
-				4DEFA1622B7D2C0300767E68 /* TheMealDbUITestsLaunchTests.swift in Sources */,
+				4DEFA1732B7D2E6800767E68 /* MealIndexModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +257,6 @@
 			isa = PBXTargetDependency;
 			target = 4DEFA1402B7D2C0200767E68 /* TheMealDb */;
 			targetProxy = 4DEFA1522B7D2C0300767E68 /* PBXContainerItemProxy */;
-		};
-		4DEFA15D2B7D2C0300767E68 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4DEFA1402B7D2C0200767E68 /* TheMealDb */;
-			targetProxy = 4DEFA15C2B7D2C0300767E68 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -508,40 +474,6 @@
 			};
 			name = Release;
 		};
-		4DEFA16C2B7D2C0300767E68 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.maschall.TheMealDbUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TheMealDb;
-			};
-			name = Debug;
-		};
-		4DEFA16D2B7D2C0300767E68 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.maschall.TheMealDbUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TheMealDb;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -568,15 +500,6 @@
 			buildConfigurations = (
 				4DEFA1692B7D2C0300767E68 /* Debug */,
 				4DEFA16A2B7D2C0300767E68 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4DEFA16B2B7D2C0300767E68 /* Build configuration list for PBXNativeTarget "TheMealDbUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4DEFA16C2B7D2C0300767E68 /* Debug */,
-				4DEFA16D2B7D2C0300767E68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
