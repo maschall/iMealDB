@@ -22,13 +22,17 @@ struct DetailView: View {
                     .frame(width: 250, height: 250)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                 
+                Divider()
+                
+                Text("\(detailViewModel.ingredients.count) Ingredients").bold()
+                ForEach($detailViewModel.ingredients, id: \.name) { $ingredient in
+                    Text("\(ingredient.name) -  \(ingredient.measurement)")
+                }
+                
+                Divider()
+                
                 Text("Instructions").bold()
                 Text(detailViewModel.instructions)
-                
-                Text("Ingredients").bold()
-                List($detailViewModel.ingredients, id: \.name) { $ingredient in 
-                    Text(ingredient.name)
-                }
             }
             .padding()
         }
