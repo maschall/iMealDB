@@ -42,8 +42,8 @@ struct MealDbAPI {
         return URLSession.shared.dataTaskPublisher(for: mealEndpoint.url!)
             .map(\.data)
             .decode(type: MealDetailWrapper.self, decoder: JSONDecoder())
-            .map { $0.meals.first ?? MealDetail(instructions: "") }
-            .replaceError(with: MealDetail(instructions: ""))
+            .map { $0.meals.first ?? MealDetail() }
+            .replaceError(with: MealDetail())
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }

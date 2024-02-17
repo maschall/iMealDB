@@ -15,17 +15,23 @@ struct DetailView: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text(detailViewModel.name).bold()
-            AsyncImage(url: detailViewModel.thumbnailURL) { image in image.image?.resizable() }
-                .frame(width: 250, height: 250)
-                .clipShape(RoundedRectangle(cornerRadius: 10))
-            
-            Text("Instructions").bold()
-            Text(detailViewModel.instructions)
+        ScrollView {
+            VStack(alignment: .leading, spacing: 10) {
+                Text(detailViewModel.name).bold()
+                AsyncImage(url: detailViewModel.thumbnailURL) { image in image.image?.resizable() }
+                    .frame(width: 250, height: 250)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                
+                Text("Instructions").bold()
+                Text(detailViewModel.instructions)
+                
+                Text("Ingredients").bold()
+                List($detailViewModel.ingredients, id: \.name) { $ingredient in 
+                    Text(ingredient.name)
+                }
+            }
+            .padding()
         }
-        .padding()
-        
     }
     
 }
